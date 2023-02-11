@@ -1,0 +1,21 @@
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />    
+
+<nav class="navbar border-bottom navbar-expand-lg bg-secondary">
+        <div class="container">
+          <a class="navbar-brand text-white uppercase" href="#">
+            <img src="{{data.brandIconUrl}}" alt="" width="50" height="45"> {{data.brandName}}</a><i class="fa-solid fa-graduation-cap h-100"></i>
+         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"><i class="fa-solid fa-bars"></i></span>
+          </button>
+          <div class="collapse navbar-collapse " id="navbarSupportedContent">
+            <ul class="navbar-nav ms-auto mb-2 mb-lg-0 py-1">
+                {{#each data.link}}
+              <li class="nav-item">
+                <a class="nav-link" href="{{this.url}}">{{this.label}} </a>
+              </li>
+            {{/each}}
+    
+            </ul>
+          </div>
+        </div>
+      </nav>

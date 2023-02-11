@@ -1,0 +1,263 @@
+body{
+    background-color: darkgray;
+}
+
+.nav-link{
+    color: cornsilk;
+
+}
+.nav-link:hover{
+    font-size: 18px;
+    border-radius: 5px;
+    text-align: center;
+    background-color: white;
+
+}
+.banner2-section h3{
+    font-family:Georgia, 'Times New Roman', Times, serif;
+    text-transform: uppercase;
+}
+
+.banner2-section p{
+    padding-top: 1rem;
+    font-family:Georgia, 'Times New Roman', Times, serif;
+    font-size: large;
+}
+.uppercase{
+    text-transform: uppercase;
+}
+.img-slide{
+    height: 500px;
+    object-fit: cover;
+}
+.news-body{
+    height: 500px; 
+    background: linear-gradient(to right, #ff105f, #ffad06);;
+    font-style: italic; 
+}
+.news-body .item i,span{
+    color: rgb(246, 246, 247);
+    justify-content: space-between;
+    font-size: large;
+}
+.news-body .card-body div{
+    border-bottom: #ffffff 2px solid;
+    padding: 1rem;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+.news-body .item a{
+    color: hsl(10%, 0%, 28%);
+    font-weight: bold;
+    text-decoration: wavy;
+    cursor: pointer;
+  }
+  
+  .news-body .item a{
+    
+    background: linear-gradient(to right, hsl(110, 100%, 40%) 0, hsl(0, 57%, 30%) 10%, hsl(258, 89%, 25%) 20%);
+    -webkit-background-clip: text;
+    background-clip:none;
+    -webkit-text-fill-color: transparent;
+    animation: shine 1s infinite linear;
+  }
+
+.custom-bg-color{
+    color: white;
+    background-color: #010001;
+background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='200' height='200' viewBox='0 0 800 800'%3E%3Cg fill='none' stroke='%23404' stroke-width='1'%3E%3Cpath d='M769 229L1037 260.9M927 880L731 737 520 660 309 538 40 599 295 764 126.5 879.5 40 599-197 493 102 382-31 229 126.5 79.5-69-63'/%3E%3Cpath d='M-31 229L237 261 390 382 603 493 308.5 537.5 101.5 381.5M370 905L295 764'/%3E%3Cpath d='M520 660L578 842 731 737 840 599 603 493 520 660 295 764 309 538 390 382 539 269 769 229 577.5 41.5 370 105 295 -36 126.5 79.5 237 261 102 382 40 599 -69 737 127 880'/%3E%3Cpath d='M520-140L578.5 42.5 731-63M603 493L539 269 237 261 370 105M902 382L539 269M390 382L102 382'/%3E%3Cpath d='M-222 42L126.5 79.5 370 105 539 269 577.5 41.5 927 80 769 229 902 382 603 493 731 737M295-36L577.5 41.5M578 842L295 764M40-201L127 80M102 382L-261 269'/%3E%3C/g%3E%3Cg fill='%23505'%3E%3Ccircle cx='769' cy='229' r='5'/%3E%3Ccircle cx='539' cy='269' r='5'/%3E%3Ccircle cx='603' cy='493' r='5'/%3E%3Ccircle cx='731' cy='737' r='5'/%3E%3Ccircle cx='520' cy='660' r='5'/%3E%3Ccircle cx='309' cy='538' r='5'/%3E%3Ccircle cx='295' cy='764' r='5'/%3E%3Ccircle cx='40' cy='599' r='5'/%3E%3Ccircle cx='102' cy='382' r='5'/%3E%3Ccircle cx='127' cy='80' r='5'/%3E%3Ccircle cx='370' cy='105' r='5'/%3E%3Ccircle cx='578' cy='42' r='5'/%3E%3Ccircle cx='237' cy='261' r='5'/%3E%3Ccircle cx='390' cy='382' r='5'/%3E%3C/g%3E%3C/svg%3E");
+}
+
+/* about pages CSS */
+.about-img{
+    height: 0px;
+    width: fit-content;
+}
+/*=====Our Story=====*/
+.about-section-1{
+	display: flex;
+	flex-flow: row wrap;
+	justify-content: space-between;
+	padding-top: 5.625em;
+    background-color: aliceblue;
+}
+
+.about-section-1 .row p {
+	font-size: 1.6rem;
+	color: #59616d;
+	margin-bottom: 1.875em;
+	line-height: 1.8;
+    font-size: large;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.top-heading {
+	text-transform: uppercase;
+	margin-bottom: 1.1667em;
+}
+
+
+.about-section-1 .our-story {
+	width: 370px;
+}
+
+.about-section-1 .our-story ul {
+	margin: 0;
+	padding: 0;
+    list-style: none;
+}
+
+.about-section-1 .our-story ul li {
+	margin-bottom: .5em;
+    font-size: large;
+    
+}
+
+.about-section-1 .our-story ul li span{
+	margin-left: 1.25rem;
+    color: #010001;
+}
+
+.about-section-1 .our-story svg {
+	margin-right: 20px;
+}
+.about-section-1 .our-story {
+    margin-left: auto;
+    margin-right: auto;
+}
+.card .card-body p{
+    height:100px;
+    font-size: large;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+} 
+.card .card-body img {
+	width: 170px;
+	height: 170px;	
+	/*border-radius: 50%;*/
+	border-bottom-left-radius: 50%;
+ 	border-bottom-right-radius: 50%;
+  	border-top-right-radius: 50%;
+  	border-top-left-radius: 50%;
+}
+
+.card-body li{
+    list-style: none;
+    display: inline-block;
+    padding: .5rem;
+}
+.card-section .card{
+    background: aquamarine;
+    height: 350px;
+}
+
+/* css for gallery section */
+
+.filter-button
+{
+    font-size: 18px;
+    border: 1px solid #42B32F;
+    border-radius: 5px;
+    text-align: center;
+    color: #42B32F;
+    margin-bottom: 30px;
+
+}
+.filter-button:hover
+{
+    font-size: 18px;
+    border: 1px solid #42B32F;
+    border-radius: 5px;
+    text-align: center;
+    color: #ffffff;
+    background-color: #42B32F;
+
+}
+.btn-default:active .filter-button:active
+{
+    background-color: #42B32F;
+    color: white;
+}
+
+.gallery_product img{
+    width: 280px;
+    height: 290px;
+}
+
+.gallery_product
+{
+    margin-bottom: 25px;
+}
+
+
+/* contact page css */
+.contact-page-section .people-info-wrap{
+    margin-top: 3em;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.contact-page-section .contact-info {
+    margin-top: 3em;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.row .college-info{
+	padding: 2rem;
+    margin-top: 3rem;
+}
+
+.profile-img img{
+	border-radius:50%;
+    height: 300px;
+    width: 290px !important;
+    
+}
+.contact-page .profile-img{
+    padding: 2rem;
+    justify-content: center;
+    align-content: center;
+}
+.contact-page .container .college-info{
+    justify-content: center;
+    align-content: center;
+}
+.contact-info ul li{
+    list-style: none;
+}
+
+.contact-social li{
+    display: inline-block;
+    align-items: center;
+    padding: 1rem;
+}
+
+.gbsm img{
+    height: 500px;
+    margin-bottom: 1rem;
+}
+.navbar-toggler span{
+    color: #ffffff !important;
+}
+*{
+    margin: 0;
+    padding: 0;
+}
+.swiper {
+    width: 100%;
+    height: 100%;
+    object-position: cover;
+  }
+
+  .swiper-slide {
+    text-align: center;
+    font-size: 18px;
+    background:cornsilk;
+    justify-content: space-between;
+    align-items: center;
+    padding: .5rem;
+  }
+  .swiper-slide .card img{
+    width: 250px;
+    height: 260px;
+  }

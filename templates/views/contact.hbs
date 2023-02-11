@@ -1,0 +1,117 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />    
+    <link rel="stylesheet" href="css/style.css" type="text/css">
+    <title>Contact Us</title>
+  </head>
+  <body>
+    {{>navbar data=detail}}
+      <!-- gbsm image content -->
+    <section>
+      <div class="container-flex">
+        <div class="row">
+          <div class="col-md-12 gbsm">
+            <img src="images/s1.jpg" alt="image" class="d-block w-100">
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+	    <!-- Contact details -->
+	    <section class="contact-page">
+			   <div class="container" style="background-color: activeborder; color: azure;">
+	         <div class="row">
+              <div class="col-md-4 profile-img">
+                <img class="img-responsive d-block w-100" alt="image" src="/images/principal.jpeg">
+                <h4 class="ms-5">Director(M.A/Msc)</h4>
+              </div>
+	         
+              <div class="col-md-8 college-info">
+                    <h1><b>Gyan Bharti Shishu Mandir</b><i class="fa-solid fa-graduation-cap h-100"></i></h1>
+                    <h3>Bhujauli Buzurg khadda Kushinagar-274802</h3>
+                    <p>
+                    <strong>Contact Number :</strong> +91 9198340541<br>
+                    <strong>Admission Enquiry :</strong> +91 9198340541/87450 83946<br>
+                    <strong>WhatsApp Number :</strong> +91 9198340541<br>
+                    <Strong>Admission E-mail Id:</Strong> ashvani641@gmail.com<br>
+                    <Strong>E-mail Id :</Strong> gbsm@edu.nic.in
+                    </p>
+              </div>
+            </div>
+	        </div>
+	    </section>
+	    <!-- Contact details -->
+		<section class="contact-page-section">
+			<div class="container">
+				<div class="row">
+          <div class="col-md-8 people-info-wrap">
+              <h2 class="uppercase">leave us your Suggetions</h2>
+              <p>Gyan Bharti Shishu Mandir is a best college to pay a great role to make a bright future of a every weak as well as moderate student.
+              We always take care of modern teaching process and follow a unique way to deliver it to every student. 
+              We provide a best quality teacher and a good teaching scheme. Our most Student working on a great MNC Companies.
+              Some of student are working in medical science fields</p>
+              <form action="/process-send-suggestion" method="post">
+                <div class="container-flex">
+                  <div class="row">
+                    <div class="col-md-6 my-1">
+                    <input type="text" name="full_name" placeholder="Full Name*" class="form-control">
+                    </div>
+                    <div class="col-md-6 my-1">
+                    <input type="email" class="form-control" name="email" aria-describedby="emailHelp" placeholder="Enter email here">
+                    </div>
+                  </div>
+                    <input type="text" name="subject" placeholder="Subject*" class="form-control my-1">
+                    <textarea name="enquiry" placeholder="Messages*" class="form-control my-2">
+                      
+                    </textarea>
+                    
+                    <button class="btn-primary block">SEND</button>
+                    
+                </div>
+              </form>
+				  </div>
+    
+          <div class="col-md-4">
+            <div class="contact-info">
+              <h2 class="uppercase">contact info</h2>
+              <ul class="contact-list">
+                <li><i class="fas fa-location-arrow"></i> 
+                  <span>
+                    <p> Gyan Bharti Shishu Mandir, Bhujauli Bujurg, Kushinagar 274802</p>
+                    <p> (Main Highway Indian Oil Petrol Pump Bhujauli Bujurg)</p>
+                  </span>
+                </li>
+                <li><i class="fas fa-phone"></i><span> <p> Mobile: 87450 83946</p> </span></li>
+                <li><i class="fas fa-envelope"></i><span>  <p> ashvani641@gmail.com</p> </span></li>
+              </ul>
+              <ul class="contact-social">
+                <li><a href=""><i class="fab fa-instagram"></i></a></li>
+                <li><a href=""><i class="fab fa-facebook-f"></i></a></li>
+                <li><a href=""><i class="fab fa-twitter"></i></a></li>
+                <li><a href=""><i class="fab fa-linkedin-in"></i></a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+			</div>
+		</section>
+
+		<section class="map-section">
+			<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3487.0386269360592!2d83.88341701500197!3d27.100083683047263!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39940bbc0557fa85%3A0x2c83668a2c444036!2sGyan%20Bharti%20Shishu%20Mandir!5e1!3m2!1sen!2sin!4v1674586237210!5m2!1sen!2sin" width="100%" height="400" frameborder="0" style="border:0" allowfullscreen></iframe>
+		</section>
+    {{!-- footer section --}}
+
+    {{>footer}}
+    <!-- Option 1: Bootstrap Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+
+  </body>
+</html>

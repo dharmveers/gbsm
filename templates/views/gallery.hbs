@@ -1,0 +1,67 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/style.css" type="text/css">
+    <title>Gallery</title>
+  </head>
+  <body style="background-color: white;">
+    {{>navbar data=detail}}
+
+        <section class="gallery-section">
+
+         <div class="container">
+            <div class="row">
+
+              <div align="center">
+                  <button class="btn btn-default filter-button" data-filter="all">All</button>
+                  <button class="btn btn-default filter-button" data-filter="campus">Campus</button>
+                  <button class="btn btn-default filter-button" data-filter="event">Events</button>
+                  <button class="btn btn-default filter-button" data-filter="activity">Activity</button>
+              </div>
+              <br/>
+            {{#each gallery}}
+            <div class="gallery_product col-md-3 filter {{this.imageType}}">
+                <img src="{{this.imgUrl}}" class="img-responsive d-block w-100">
+            </div>          
+            {{/each}}
+        </div>
+    </div>
+
+        </section>
+
+        <script src="https://code.jquery.com/jquery-3.6.3.js" integrity="sha256-nQLuAZGRRcILA+6dMBOvcRh5Pe310sBpanc6+QBmyVM=" crossorigin="anonymous"></script>
+
+          <script>
+            //image viewed
+            $(document).ready(function(){
+              $('.filter-button').click(function(){
+                const value=$(this).attr('data-filter');
+                if(value=='all'){
+                    $('.filter').show('1000');
+                }else{
+                  $('.filter').not('.'+value).hide('3000');
+                  $('.filter').filter('.'+value).show('3000');
+                }
+
+              });
+              if ($(".filter-button").removeClass("active")) {
+                      $(this).removeClass("active");
+              }
+              $(this).addClass("active");
+
+            });
+          </script>
+
+      {{>footer}}
+       
+    <!-- Option 1: Bootstrap Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+
+  </body>
+</html>
