@@ -1,3 +1,4 @@
+require('dotenv').config();
 const express=require("express");
 const routes=require("./routes/main");
 const mongoose=require("mongoose");
@@ -43,13 +44,13 @@ app.listen(port|8082,() => {
 
 //database connection 127.0.0.1
 mongoose.set('strictQuery', true);
-mongoose.connect("mongodb://127.0.0.1:27017/website_tut",{
+mongoose.connect(process.env.MONGO_URI,{
     useNewUrlParser:true,
     useUnifiedTopology:true,
 }).then(()=>{
 
-   /*  //create slider collection
-    Slider.create([
+     //create slider collection
+    /*Slider.create([
         {
             title:"Gyan Bharti Shishu Mandir",
             subTitle:"Celebrates 75th Independance day",
