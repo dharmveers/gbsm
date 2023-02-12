@@ -15,7 +15,7 @@ const routes=express.Router();
 
 
 routes.get("/",async(request, response) =>{
-   const detail=await Details.findOne({"_id":"63dc0dfac74fbcd63f99f05c"});
+   const detail=await Details.find();
    const slider=await Sliders.find();
    const service=await Services.find();
    const content=await Content.find();
