@@ -30,7 +30,7 @@ routes.get("/",async(request, response) =>{
 });
 
 routes.get("/about",async(request, response) =>{
-    const detail=await Details.findOne({"_id":"63dc0dfac74fbcd63f99f05c"});
+    const detail=await Details.find();
     const slider=await Sliders.find();
     const about= await About.find();
     response.render("about",
@@ -42,7 +42,7 @@ routes.get("/about",async(request, response) =>{
 });
 
 routes.get("/gallery",async(request, response) =>{
-    const detail=await Details.findOne({"_id":"63dc0dfac74fbcd63f99f05c"});
+    const detail=await Details.find();
     const slider=await Sliders.find();
     const gallery= await Gallery.find();
     response.render("gallery",
@@ -54,7 +54,7 @@ routes.get("/gallery",async(request, response) =>{
 });
 
 routes.get("/contact",async(request, response) =>{
-    const detail=await Details.findOne({"_id":"63dc0dfac74fbcd63f99f05c"});
+    const detail=await Details.find();
     response.render("contact",{detail:detail});
 });
 
